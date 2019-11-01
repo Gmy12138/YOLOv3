@@ -23,9 +23,10 @@ A PyTorch implementation of YOLOv3, with support for training, inference and eva
     
 ## Test
 Evaluates the model on NEU-DET test.
-
-   $ NDE: Without Data Enhancement
-   $ DE: Data Enhancement
+```
+   NDE: Without Data Enhancement    
+   DE: Data Enhancement
+```
 
 | Model                   | mAP (min. 50 IoU) |
 | ----------------------- |:-----------------:|
@@ -56,7 +57,7 @@ $ train.py [-h] [--epochs EPOCHS] [--batch_size BATCH_SIZE]
 
 #### Training log
 ```
----- [Epoch 7/100, Batch 7300/14658] ----
+---- [Epoch 7/100, Batch 8/150] ----
 +------------+--------------+--------------+--------------+
 | Metrics    | YOLO Layer 0 | YOLO Layer 1 | YOLO Layer 2 |
 +------------+--------------+--------------+--------------+
