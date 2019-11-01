@@ -1,5 +1,5 @@
 # YOLOv3
-#### pytorch 1.3 and python 3.6 is suppoted
+### pytorch 1.3 and python 3.6 is suppoted
 A PyTorch implementation of YOLOv3, with support for training, inference and evaluation.
 
 ## Introduction
