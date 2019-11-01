@@ -5,3 +5,5 @@ terminaltables
 pillow
 tqdm
 opencv-python
+matplotlib
+glob
