@@ -1,0 +1,11 @@
+.idea/
+output/
+ground_truth/
+data/NEU-DET/train
+data/NEU-DET/valid
+data/samples/*.jpg
+weights/darknet53.conv.74
+weights/*.pth
+logs/
+__pycache__
+checkpoints
