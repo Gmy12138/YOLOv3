@@ -3,7 +3,7 @@
 A PyTorch implementation of YOLOv3, with support for training, inference and evaluation.
 
 ## Introduction
-#### The method of yolov3 was used to perform defect detection on NEU surface defect database, and We adopted data enhancement methods such as random clipping, flipping and color enhancement. Finally achieved a satisfactory result.
+The method of yolov3 was used to perform defect detection on NEU surface defect database, and We adopted data enhancement methods such as random clipping, flipping and color enhancement. Finally achieved a satisfactory result.
 
 
 ## Installation
