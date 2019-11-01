@@ -19,7 +19,7 @@ The method of yolov3 was used to perform defect detection on NEU surface defect 
 ##### Download NEU-DET dataset
     $ Download address    http://faculty.neu.edu.cn/yunhyan/NEU_surface_defect_database.html
     $ cd data/
-    $ Put the data in the NEU-DET dataset folder
+    $ Put the dataset in the data folder
     
 ## Test
 Evaluates the model on NEU-DET test.
