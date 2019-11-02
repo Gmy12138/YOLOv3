@@ -1,5 +1,5 @@
 # YOLOv3
-### pytorch 1.3 and python 3.6 is suppoted
+### pytorch 1.3 and python 3.6 is supported
 A PyTorch implementation of YOLOv3, with support for training, inference and evaluation.
 
 ## Introduction
@@ -39,7 +39,7 @@ Uses pretrained weights to make predictions on images. The Darknet-53 measuremen
 
 | Backbone                | GPU      | FPS      |
 | ----------------------- |:--------:|:--------:|
-| Darknet-53              | 2080ti   |          |
+| Darknet-53              | 2080ti   |  23      |
 
 
 ## Train
