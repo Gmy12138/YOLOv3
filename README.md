@@ -35,7 +35,7 @@ DE: Data Enhancement
 | YOLOv3 320 (DE)         | 65.1              |
 
 ## Inference
-Uses pretrained weights to make predictions on images. The Darknet-53 measurement marked shows the inference time of this implementation on my 2080ti card.
+Uses pretrained weights to make predictions on images. The Darknet-53 measurement marked shows the inference time of this implementation on GPU 2080ti.
 
 | Backbone                | GPU      | FPS      |
 | ----------------------- |:--------:|:--------:|
