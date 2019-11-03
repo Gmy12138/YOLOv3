@@ -66,11 +66,13 @@ if __name__ == "__main__":
     imgs = []  # Stores image paths
     img_detections = []  # Stores detections for each image index
 
+    TIME=0
     print("\nPerforming object detection:")
     prev_time = time.time()
     for batch_i, (img_paths, input_imgs) in enumerate(dataloader):
         # Configure input
         # input_imgs = Variable(input_imgs.type(Tensor))
+        # print(batch_i)
         input_imgs = input_imgs.type(Tensor)
         # Get detections
         with torch.no_grad():
@@ -79,7 +81,9 @@ if __name__ == "__main__":
 
         # Log progress
         current_time = time.time()
-        inference_time = datetime.timedelta(seconds=current_time - prev_time)
+        inference_time = current_time - prev_time
+        if  batch_i != 0:
+            TIME+=inference_time
         prev_time = current_time
         print("\t+ Batch %d, Inference Time: %s" % (batch_i, inference_time))
 
@@ -87,6 +91,7 @@ if __name__ == "__main__":
         imgs.extend(img_paths)
         img_detections.extend(detections)
 
+    print("FPS: %s" % (1/(TIME/5)))
     # Bounding-box colors
     cmap = plt.get_cmap("tab20b")
     colors = [cmap(i) for i in np.linspace(0, 1, 6)]

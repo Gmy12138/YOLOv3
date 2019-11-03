@@ -37,9 +37,9 @@ DE: Data Enhancement
 ## Inference
 Uses pretrained weights to make predictions on images. The Darknet-53 measurement marked shows the inference time of this implementation on GPU 2080ti.
 
-| Backbone                | GPU      | FPS      |
-| ----------------------- |:--------:|:--------:|
-| Darknet-53              | 2080ti   |  23      |
+| Backbone         |  Image Size     | GPU      | FPS      |
+| -----------------|:------          |:--------:|:--------:|
+| Darknet-53       |     320         | 2080ti   |  23      |
 
 
 ## Train
