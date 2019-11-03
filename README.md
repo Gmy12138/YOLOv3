@@ -34,9 +34,10 @@ Evaluates the model on NEU-DET test.
 ## Inference
 Uses pretrained weights to make predictions on images. The Darknet-53 measurement marked shows the inference time of this implementation on GPU 2080ti.
 
-| Backbone         |  Image Size     | GPU      | FPS      |
-|:----------------:|:---------------:|:--------:|:--------:|
-| Darknet-53       |     320         | 2080ti   |  23      |
+
+| Model      |Backbone      |  Image Size     | GPU      | FPS      | parameters (10<sup>6</sup>)|FLOPs (10<sup>9</sup>)|
+|:----------:|:------------:|:---------------:|:--------:|:--------:|:--------------------------:|:--------------------:|
+| YOLOv3     | Darknet-53   |     320         | 2080ti   |   23     |            61.55           |     38.68            | 
 
 
 ## Train
