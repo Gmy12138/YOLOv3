@@ -28,17 +28,17 @@ WDE: Without Data Enhancement
 DE: Data Enhancement
 ```
 
-| Model                   | mAP (min. 50 IoU) |
-| ----------------------- |:-----------------:|
-| YOLOv3 416 (WDE)        | 53.5              |
-| YOLOv3 416 (DE)         | 67.1              |
-| YOLOv3 320 (DE)         | 65.1              |
+| Model  |Image Size|   Data Enhancement      | mAP (min. 50 IoU) |
+| -------|:---------|:------------------------|:-----------------:|
+| YOLOv3 |416       |     WDE                 | 53.5              |
+| YOLOv3 |416       |      DE                 | 67.1              |
+| YOLOv3 |320       |      DE                 | 65.1              |
 
 ## Inference
 Uses pretrained weights to make predictions on images. The Darknet-53 measurement marked shows the inference time of this implementation on GPU 2080ti.
 
 | Backbone         |  Image Size     | GPU      | FPS      |
-| -----------------|:------          |:--------:|:--------:|
+| -----------------|:----------------|:--------:|:--------:|
 | Darknet-53       |     320         | 2080ti   |  23      |
 
 
