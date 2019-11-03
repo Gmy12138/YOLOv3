@@ -23,16 +23,13 @@ The method of yolov3 was used to perform defect detection on NEU surface defect 
     
 ## Test
 Evaluates the model on NEU-DET test.
-```
-WDE: Without Data Enhancement    
-DE: Data Enhancement
-```
+
 
 | Model  |Image Size|   Data Enhancement      | mAP (min. 50 IoU) |
 | -------|:--------:|:-----------------------:|:-----------------:|
-| YOLOv3 |416       |     WDE                 | 53.5              |
-| YOLOv3 |416       |      DE                 | 67.1              |
-| YOLOv3 |320       |      DE                 | 65.1              |
+| YOLOv3 |416       |      NO                 | 53.5              |
+| YOLOv3 |416       |      YES                | 67.1              |
+| YOLOv3 |320       |      YES                | 65.1              |
 
 ## Inference
 Uses pretrained weights to make predictions on images. The Darknet-53 measurement marked shows the inference time of this implementation on GPU 2080ti.
