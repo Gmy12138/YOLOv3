@@ -26,7 +26,7 @@ Evaluates the model on NEU-DET test.
 
 
 | Model  |Image Size|   Data Enhancement      | mAP (min. 50 IoU) |
-| -------|:--------:|:-----------------------:|:-----------------:|
+|:------:|:--------:|:-----------------------:|:-----------------:|
 | YOLOv3 |416       |      NO                 | 53.5              |
 | YOLOv3 |416       |      YES                | 67.1              |
 | YOLOv3 |320       |      YES                | 65.1              |
@@ -35,7 +35,7 @@ Evaluates the model on NEU-DET test.
 Uses pretrained weights to make predictions on images. The Darknet-53 measurement marked shows the inference time of this implementation on GPU 2080ti.
 
 | Backbone         |  Image Size     | GPU      | FPS      |
-| -----------------|:---------------:|:--------:|:--------:|
+|:----------------:|:---------------:|:--------:|:--------:|
 | Darknet-53       |     320         | 2080ti   |  23      |
 
 
