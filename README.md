@@ -25,7 +25,7 @@ The method of yolov3 was used to perform defect detection on NEU surface defect 
 Evaluates the model on NEU-DET test.
 
 
-| Model  |Image Size|   Data Enhancement      | mAP (min. 50 IoU) |
+| Model  |Image Size|     Data Enhancement    | mAP (min. 50 IoU) |
 |:------:|:--------:|:-----------------------:|:-----------------:|
 | YOLOv3 |416       |      NO                 | 53.5              |
 | YOLOv3 |416       |      YES                | 67.1              |
