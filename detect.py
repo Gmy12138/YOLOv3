@@ -120,6 +120,8 @@ if __name__ == "__main__":
                 # print( x1, y1, x2, y2,conf, cls_conf, cls_pred)
 
                 print("\t+ Label: %s, Conf: %.5f" % (classes[int(cls_pred)], cls_conf.item()))
+                x1 = x1 if x1 > 0 else 0
+                y1 = y1 if y1 > 0 else 0
 
                 box_w = x2 - x1
                 box_h = y2 - y1
