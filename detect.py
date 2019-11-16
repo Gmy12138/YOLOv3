@@ -68,13 +68,14 @@ if __name__ == "__main__":
 
     TIME=0
     print("\nPerforming object detection:")
-    prev_time = time.time()
+    # prev_time = time.time()
     for batch_i, (img_paths, input_imgs) in enumerate(dataloader):
         # Configure input
         # input_imgs = Variable(input_imgs.type(Tensor))
         # print(batch_i)
         input_imgs = input_imgs.type(Tensor)
         # Get detections
+        prev_time = time.time()
         with torch.no_grad():
             detections = model(input_imgs)
             detections = non_max_suppression(detections, opt.conf_thres, opt.nms_thres)
@@ -83,8 +84,8 @@ if __name__ == "__main__":
         current_time = time.time()
         inference_time = current_time - prev_time
         if  batch_i != 0:
-            TIME+=inference_time
-        prev_time = current_time
+            TIME += inference_time
+        # prev_time = current_time
         print("\t+ Batch %d, Inference Time: %s" % (batch_i, inference_time))
 
         # Save image and detections
@@ -119,7 +120,7 @@ if __name__ == "__main__":
             for x1, y1, x2, y2, conf, cls_conf, cls_pred in detections:
                 # print( x1, y1, x2, y2,conf, cls_conf, cls_pred)
 
-                print("\t+ Label: %s, Conf: %.5f" % (classes[int(cls_pred)], cls_conf.item()))
+                # print("\t+ Label: %s, Conf: %.5f" % (classes[int(cls_pred)], cls_conf.item()))
                 x1 = x1 if x1 > 0 else 0
                 y1 = y1 if y1 > 0 else 0
 

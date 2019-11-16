@@ -8,9 +8,9 @@ The method of yolov3 was used to perform defect detection on NEU surface defect 
 
 ## Installation
 ##### Clone and install requirements
-    $ git clone https://github.com/Gmy12138/YOLOv3
+    $ git clone https://github.com/Gmy12138/YOLOv3.git
     $ cd YOLOv3/
-    $ sudo pip install -r requirements.txt
+    $ pip install -r requirements.txt
 
 ##### Download pretrained weights
     $ cd weights/
@@ -37,7 +37,7 @@ Uses pretrained weights to make predictions on images. The Darknet-53 measuremen
 
 | Model      |Backbone      |  Image Size     | GPU      | FPS      | parameters (10<sup>6</sup>)|FLOPs (10<sup>9</sup>)|
 |:----------:|:------------:|:---------------:|:--------:|:--------:|:--------------------------:|:--------------------:|
-| YOLOv3     | Darknet-53   |     320         | 2080ti   |   23     |            61.55           |     38.68            | 
+| YOLOv3     | Darknet-53   |     320         | 2080ti   |   72     |            61.55           |     38.68            | 
 
 
 ## Train
